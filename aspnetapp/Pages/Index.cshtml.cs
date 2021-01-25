@@ -19,7 +19,7 @@ namespace aspnetapp.Pages
 
         public void OnGet()
         {
-
+            //var db = Environment.GetEnvironmentVariable("DATABASE_URL");
         }
     }
 }

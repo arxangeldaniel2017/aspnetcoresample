@@ -20,6 +20,10 @@
     <h5 class="text-center">Metrics</h5>
     <table width="500" align="center" class="table-striped table-hover">
         <tr>
+            <td>DATABASE_URL</td>
+            <td>@Environment.GetEnvironmentVariable("DATABASE_URL")</td>
+        </tr>        
+        <tr>
             <td>Containerized</td>
             <td>@(Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") is object ? "true" : "false")</td>
         </tr>
