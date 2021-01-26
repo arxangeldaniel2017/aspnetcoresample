@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
+using Microsoft.EntityFrameworkCore;
+//using aspnetapp.DB;
+using aspnetapp.Database;
 
 namespace aspnetapp
 {
@@ -31,14 +34,14 @@ namespace aspnetapp
             }
             if(!string.IsNullOrEmpty(databaseUrl))
             {
-
+                services.AddDbContext<AppDbContext>(options => options.UseNpgsql(databaseUrl));
             }
 
             services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, AppDbContext context)
         {
             if (env.IsDevelopment())
             {
@@ -51,9 +54,6 @@ namespace aspnetapp
                 app.UseHsts();
             }
 
-
-
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -65,6 +65,18 @@ namespace aspnetapp
             {
                 endpoints.MapRazorPages();
             });
+
+            ApplyMigrations(context);
+        }
+
+        private void ApplyMigrations(AppDbContext context) 
+        {
+            context.Database.EnsureCreated();
+
+            if (context.Database.GetPendingMigrations().Any()) 
+            {
+                context.Database.Migrate();
+            }
         }
     }
 }
