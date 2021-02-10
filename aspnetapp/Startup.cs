@@ -71,7 +71,8 @@ namespace aspnetapp
 
         private void ApplyMigrations(AppDbContext context) 
         {
-            context.Database.EnsureCreated();
+            //TODO: NOT NEEDED when using migrations
+            //context.Database.EnsureCreated();
 
             if (context.Database.GetPendingMigrations().Any()) 
             {
