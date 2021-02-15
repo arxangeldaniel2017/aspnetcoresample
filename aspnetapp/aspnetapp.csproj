@@ -8,5 +8,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.2"/>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.2"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.2"/>
+    <PackageReference Include="NETCore.MailKit" Version="1.0.0"/>
   </ItemGroup>
 </Project>

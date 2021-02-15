@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using aspnetapp.Model;
 using aspnetapp.Database;
+using MailKit.Net.Smtp;
+using MimeKit;
 
 namespace aspnetapp.Pages
 {
@@ -24,6 +26,29 @@ namespace aspnetapp.Pages
             // //TODO: test working
             // _context.Tests.Add(new Test(){Id = 2, Name = "Tolik"});
             // _context.SaveChanges();
+
+            //TODO: check MailKit + DigitalOcean Mail Server
+            
+            var from = new MailboxAddress("Admin", "admin@mailstorm.ml");
+            var to = new MailboxAddress("Daniel", "arxangeldaniel@gmail.com");
+            var bodyBuilder = new BodyBuilder();
+            bodyBuilder.HtmlBody = "<h1>Hello World!</h1>";
+            bodyBuilder.TextBody = "Hello World!";
+
+            var message = new MimeMessage();
+            message.From.Add(from);
+            message.To.Add(to);
+            message.Subject = "Uraaa, working";
+            message.Body = bodyBuilder.ToMessageBody();
+
+            var client = new SmtpClient();
+            client.Connect("mail.mailstorm.ml", 25, false);
+            //client.Authenticate("admin@mailstorm.ml", "mushbenari");
+            //client.Authenticate("myapp", "mushbenari");
+
+            client.Send(message);
+            client.Disconnect(true);
+            client.Dispose();
         }
 
         public void OnGet()
