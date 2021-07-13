@@ -23,6 +23,9 @@ namespace aspnetapp.Pages
 
             _context = context;
 
+            //TODO: test Model_DTM
+            //_context.Tests
+
             // //TODO: test working
             // _context.Tests.Add(new Test(){Id = 4, Name = "Tolik"});
             // _context.SaveChanges();
