@@ -24,8 +24,8 @@ namespace aspnetapp.Pages
             _context = context;
 
             // //TODO: test working
-            _context.Tests.Add(new Test(){Id = 2, Name = "Tolik"});
-            _context.SaveChanges();
+            // _context.Tests.Add(new Test(){Id = 4, Name = "Tolik"});
+            // _context.SaveChanges();
 
             //TODO: check MailKit + DigitalOcean Mail Server
             
