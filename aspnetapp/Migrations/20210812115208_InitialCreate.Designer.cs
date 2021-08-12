@@ -10,7 +10,7 @@ using aspnetapp.Database;
 namespace aspnetapp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210713150247_InitialCreate")]
+    [Migration("20210812115208_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -18,7 +18,7 @@ namespace aspnetapp.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
-                .HasAnnotation("ProductVersion", "5.0.7")
+                .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
             modelBuilder.Entity("aspnetapp.Model.DtmAction", b =>
@@ -38,8 +38,10 @@ namespace aspnetapp.Migrations
 
             modelBuilder.Entity("aspnetapp.Model.DtmApplication", b =>
                 {
-                    b.Property<decimal>("Id")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("ApplicationCaption")
                         .HasColumnType("text");
@@ -47,8 +49,8 @@ namespace aspnetapp.Migrations
                     b.Property<string>("ApplicationName")
                         .HasColumnType("text");
 
-                    b.Property<decimal>("ApplicationSiteId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("ApplicationSiteId")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -57,7 +59,7 @@ namespace aspnetapp.Migrations
 
             modelBuilder.Entity("aspnetapp.Model.DtmApplicationXmlObject", b =>
                 {
-                    b.Property<int>("ApplicationXmlObjectsId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
@@ -71,15 +73,17 @@ namespace aspnetapp.Migrations
                     b.Property<int>("ApplicationXmlObjectsXmlObjectId")
                         .HasColumnType("integer");
 
-                    b.HasKey("ApplicationXmlObjectsId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmApplicationXmlObjects");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmDatabase", b =>
                 {
-                    b.Property<decimal>("DatabaseId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("DatabaseApplicationString")
                         .HasColumnType("text");
@@ -90,40 +94,44 @@ namespace aspnetapp.Migrations
                     b.Property<string>("DatabaseName")
                         .HasColumnType("text");
 
-                    b.Property<decimal?>("DatabaseTypeId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("DatabaseTypeId")
+                        .HasColumnType("integer");
 
-                    b.HasKey("DatabaseId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmDatabases");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmDatabaseType", b =>
                 {
-                    b.Property<decimal>("DatabaseTypeId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("DatabaseTypeName")
                         .HasColumnType("text");
 
-                    b.HasKey("DatabaseTypeId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmDatabaseTypes");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmField", b =>
                 {
-                    b.Property<decimal>("FieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<bool?>("FieldAutoIncrement")
                         .HasColumnType("boolean");
 
-                    b.Property<decimal?>("FieldAutoIncrementSeed")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FieldAutoIncrementSeed")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal?>("FieldAutoIncrementStep")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FieldAutoIncrementStep")
+                        .HasColumnType("integer");
 
                     b.Property<string>("FieldCaption")
                         .HasColumnType("text");
@@ -137,11 +145,11 @@ namespace aspnetapp.Migrations
                     b.Property<bool?>("FieldDoNotDisplay")
                         .HasColumnType("boolean");
 
-                    b.Property<decimal?>("FieldFkfieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FieldFkfieldId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal?>("FieldHeight")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FieldHeight")
+                        .HasColumnType("integer");
 
                     b.Property<bool?>("FieldIsFilter")
                         .HasColumnType("boolean");
@@ -152,14 +160,14 @@ namespace aspnetapp.Migrations
                     b.Property<bool?>("FieldIsQueryStringFilter")
                         .HasColumnType("boolean");
 
-                    b.Property<decimal?>("FieldMaxChars")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FieldMaxChars")
+                        .HasColumnType("integer");
 
                     b.Property<string>("FieldName")
                         .HasColumnType("text");
 
-                    b.Property<decimal?>("FieldOrder")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FieldOrder")
+                        .HasColumnType("integer");
 
                     b.Property<string>("FieldParamValue")
                         .HasColumnType("text");
@@ -170,49 +178,53 @@ namespace aspnetapp.Migrations
                     b.Property<bool?>("FieldRequired")
                         .HasColumnType("boolean");
 
-                    b.Property<decimal>("FieldTableId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FieldTableId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal>("FieldTypeId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FieldTypeId")
+                        .HasColumnType("integer");
 
                     b.Property<bool?>("FieldUnique")
                         .HasColumnType("boolean");
 
-                    b.Property<decimal?>("FieldUpfieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FieldUpfieldId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("FieldUrlLink")
                         .HasColumnType("text");
 
-                    b.Property<decimal?>("FieldViewDescriptionChars")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FieldViewDescriptionChars")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal?>("FieldWidth")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FieldWidth")
+                        .HasColumnType("integer");
 
-                    b.HasKey("FieldId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmFields");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmFieldType", b =>
                 {
-                    b.Property<decimal>("FieldTypeId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("FieldTypeName")
                         .HasColumnType("text");
 
-                    b.HasKey("FieldTypeId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmFieldTypes");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmFilter", b =>
                 {
-                    b.Property<decimal>("FilterId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("FilterCustomSelect")
                         .HasColumnType("text");
@@ -220,112 +232,122 @@ namespace aspnetapp.Migrations
                     b.Property<string>("FilterDefaultValue")
                         .HasColumnType("text");
 
-                    b.Property<decimal?>("FilterFieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FilterFieldId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal?>("FilterFieldOperatorId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FilterFieldOperatorId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("FilterName")
                         .HasColumnType("text");
 
-                    b.Property<decimal>("FilterOperatorId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FilterOperatorId")
+                        .HasColumnType("integer");
 
                     b.Property<int>("FilterOrderBy")
                         .HasColumnType("integer");
 
-                    b.HasKey("FilterId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmFilters");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmFilterGroup", b =>
                 {
-                    b.Property<decimal>("FilterGroupId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal>("FilterGroupFilterId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FilterGroupFilterId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal>("FilterGroupFilterOperatorId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FilterGroupFilterOperatorId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("FilterGroupName")
                         .HasColumnType("text");
 
-                    b.Property<decimal>("FilterGroupOperatorId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FilterGroupOperatorId")
+                        .HasColumnType("integer");
 
                     b.Property<int>("FilterGroupOrderBy")
                         .HasColumnType("integer");
 
-                    b.HasKey("FilterGroupId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmFilterGroups");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmFilterParameter", b =>
                 {
-                    b.Property<decimal>("FilterParametersId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal>("FilterParametersFilterId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FilterParametersFilterId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal>("FilterParametersParameterId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FilterParametersParameterId")
+                        .HasColumnType("integer");
 
-                    b.HasKey("FilterParametersId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmFilterParameters");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmFkValue", b =>
                 {
-                    b.Property<decimal>("FkValueId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal>("FkValueFieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FkValueFieldId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal>("FkValueFkfieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FkValueFkfieldId")
+                        .HasColumnType("integer");
 
                     b.Property<bool?>("FkvalueDoNotDisplay")
                         .HasColumnType("boolean");
 
-                    b.Property<decimal?>("FkvalueOrder")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("FkvalueOrder")
+                        .HasColumnType("integer");
 
                     b.Property<string>("FkvalueSeparator")
                         .HasColumnType("text");
 
-                    b.HasKey("FkValueId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmFkValues");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmFkfield", b =>
                 {
-                    b.Property<decimal>("FkfieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal>("FkfieldKeyFieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FkfieldKeyFieldId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal>("FkfieldTableId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("FkfieldTableId")
+                        .HasColumnType("integer");
 
-                    b.HasKey("FkfieldId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmFkfields");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmHtmlTable", b =>
                 {
-                    b.Property<decimal>("HtmlTableId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("HtmlTableName")
                         .HasColumnType("text");
@@ -336,21 +358,23 @@ namespace aspnetapp.Migrations
                     b.Property<string>("HtmlTablePropertiesString")
                         .HasColumnType("text");
 
-                    b.HasKey("HtmlTableId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmHtmlTables");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmHtmlTableCell", b =>
                 {
-                    b.Property<decimal>("HtmlTableCellId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<int?>("HtmlTableCellCollspan")
                         .HasColumnType("integer");
 
-                    b.Property<decimal>("HtmlTableCellHtmlTableRowId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("HtmlTableCellHtmlTableRowId")
+                        .HasColumnType("integer");
 
                     b.Property<int>("HtmlTableCellOrderBy")
                         .HasColumnType("integer");
@@ -358,18 +382,20 @@ namespace aspnetapp.Migrations
                     b.Property<string>("HtmlTableCellPropertiesString")
                         .HasColumnType("text");
 
-                    b.HasKey("HtmlTableCellId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmHtmlTableCells");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmHtmlTableRow", b =>
                 {
-                    b.Property<decimal>("HtmlTableRowId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal>("HtmlTableRowHtmlTableId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("HtmlTableRowHtmlTableId")
+                        .HasColumnType("integer");
 
                     b.Property<int>("HtmlTableRowOrderBy")
                         .HasColumnType("integer");
@@ -380,15 +406,17 @@ namespace aspnetapp.Migrations
                     b.Property<int?>("HtmlTableRowRowspan")
                         .HasColumnType("integer");
 
-                    b.HasKey("HtmlTableRowId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmHtmlTableRows");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmOperator", b =>
                 {
-                    b.Property<decimal>("OperatorId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("OperatorName")
                         .HasColumnType("text");
@@ -396,47 +424,53 @@ namespace aspnetapp.Migrations
                     b.Property<string>("OperatorValue")
                         .HasColumnType("text");
 
-                    b.HasKey("OperatorId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmOperators");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmParameter", b =>
                 {
-                    b.Property<decimal>("ParameterId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("ParameterName")
                         .HasColumnType("text");
 
-                    b.Property<decimal>("ParameterParameterTypeId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("ParameterParameterTypeId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal>("ParameterSiteId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("ParameterSiteId")
+                        .HasColumnType("integer");
 
-                    b.HasKey("ParameterId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmParameters");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmParameterType", b =>
                 {
-                    b.Property<decimal>("ParameterTypeId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("ParameterTypeName")
                         .HasColumnType("text");
 
-                    b.HasKey("ParameterTypeId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmParameterTypes");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmSite", b =>
                 {
-                    b.Property<decimal>("SiteId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("SiteAppLinkAndroid")
                         .HasColumnType("text");
@@ -453,11 +487,11 @@ namespace aspnetapp.Migrations
                     b.Property<string>("SiteConfigXml")
                         .HasColumnType("text");
 
-                    b.Property<decimal?>("SiteDtmdatabaseId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("SiteDtmdatabaseId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal?>("SiteDtmuserId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("SiteDtmuserId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("SiteGooglePlayLink")
                         .HasColumnType("text");
@@ -465,15 +499,17 @@ namespace aspnetapp.Migrations
                     b.Property<string>("SiteName")
                         .HasColumnType("text");
 
-                    b.HasKey("SiteId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmSites");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmTable", b =>
                 {
-                    b.Property<decimal>("TableId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<bool?>("TableAllowPaging")
                         .HasColumnType("boolean");
@@ -484,8 +520,8 @@ namespace aspnetapp.Migrations
                     b.Property<string>("TableCaption")
                         .HasColumnType("text");
 
-                    b.Property<decimal>("TableDatabaseId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("TableDatabaseId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("TableDesc")
                         .HasColumnType("text");
@@ -511,37 +547,41 @@ namespace aspnetapp.Migrations
                     b.Property<int?>("TablePageSize")
                         .HasColumnType("integer");
 
-                    b.HasKey("TableId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmTables");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmTablePermission", b =>
                 {
-                    b.Property<decimal>("TablePermissionId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal>("TablePermissionActionId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("TablePermissionActionId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal>("TablePermissionTableId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("TablePermissionTableId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal?>("TablePermissionUserGroupId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("TablePermissionUserGroupId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal?>("TablePermissionUserId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("TablePermissionUserId")
+                        .HasColumnType("integer");
 
-                    b.HasKey("TablePermissionId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmTablePermissions");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmUpfield", b =>
                 {
-                    b.Property<decimal>("UpfieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("UpfieldFtploggin")
                         .HasColumnType("text");
@@ -555,37 +595,41 @@ namespace aspnetapp.Migrations
                     b.Property<string>("UpfieldPath")
                         .HasColumnType("text");
 
-                    b.Property<decimal?>("UpfieldTableId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("UpfieldTableId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal?>("UpfieldUnqueNameFieldId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("UpfieldUnqueNameFieldId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal?>("UpfieldUploadTypeId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("UpfieldUploadTypeId")
+                        .HasColumnType("integer");
 
-                    b.HasKey("UpfieldId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmUpfields");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmUploadType", b =>
                 {
-                    b.Property<decimal>("UploadTypeId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("UploadTypeName")
                         .HasColumnType("text");
 
-                    b.HasKey("UploadTypeId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmUploadTypes");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmUser", b =>
                 {
-                    b.Property<decimal>("UserId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<bool?>("UserIsAdministrator")
                         .HasColumnType("boolean");
@@ -596,15 +640,17 @@ namespace aspnetapp.Migrations
                     b.Property<string>("UserPassword")
                         .HasColumnType("text");
 
-                    b.HasKey("UserId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmUsers");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmUserGroup", b =>
                 {
-                    b.Property<decimal>("UserGroupId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("UserGroupDescription")
                         .HasColumnType("text");
@@ -612,31 +658,35 @@ namespace aspnetapp.Migrations
                     b.Property<string>("UserGroupName")
                         .HasColumnType("text");
 
-                    b.HasKey("UserGroupId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmUserGroups");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmUserGroupsUser", b =>
                 {
-                    b.Property<decimal>("UserGroupsUsersId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal>("UserGroupsUsersUserGroupId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("UserGroupsUsersUserGroupId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal>("UserGroupsUsersUserId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("UserGroupsUsersUserId")
+                        .HasColumnType("integer");
 
-                    b.HasKey("UserGroupsUsersId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmUserGroupsUsers");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmXmlObject", b =>
                 {
-                    b.Property<decimal>("XmlObjectId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("XmlObjectCustomSelect")
                         .HasColumnType("text");
@@ -644,8 +694,8 @@ namespace aspnetapp.Migrations
                     b.Property<string>("XmlObjectName")
                         .HasColumnType("text");
 
-                    b.Property<decimal?>("XmlObjectTableId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("XmlObjectTableId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("XmlObjectXslFile")
                         .HasColumnType("text");
@@ -653,23 +703,25 @@ namespace aspnetapp.Migrations
                     b.Property<string>("XmlObjectXslString")
                         .HasColumnType("text");
 
-                    b.HasKey("XmlObjectId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmXmlObjects");
                 });
 
             modelBuilder.Entity("aspnetapp.Model.DtmXmlObjectParameter", b =>
                 {
-                    b.Property<decimal>("XmlObjectParametersId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<decimal>("XmlObjectParametersParameterId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("XmlObjectParametersParameterId")
+                        .HasColumnType("integer");
 
-                    b.Property<decimal>("XmlObjectParametersXmlObjectId")
-                        .HasColumnType("numeric");
+                    b.Property<int>("XmlObjectParametersXmlObjectId")
+                        .HasColumnType("integer");
 
-                    b.HasKey("XmlObjectParametersId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmXmlObjectParameters");
                 });
@@ -714,8 +766,8 @@ namespace aspnetapp.Migrations
                     b.Property<string>("UploadFileName")
                         .HasColumnType("text");
 
-                    b.Property<decimal?>("UploadId")
-                        .HasColumnType("numeric");
+                    b.Property<int?>("UploadId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("UploadName")
                         .HasColumnType("text");
