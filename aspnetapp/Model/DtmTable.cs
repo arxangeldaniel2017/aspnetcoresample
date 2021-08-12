@@ -7,9 +7,8 @@ namespace aspnetapp.Model
 {
     public class DtmTable
     {
-        [Key]
-        public decimal TableId { get; set; }
-        public decimal TableDatabaseId { get; set; }
+        public int Id { get; set; }
+        public int TableDatabaseId { get; set; }
         public string TableName { get; set; }
         public string TableCaption { get; set; }
         public string TableDesc { get; set; }

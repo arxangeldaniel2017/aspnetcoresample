@@ -7,9 +7,8 @@ namespace aspnetapp.Model
 {
     public class DtmFilterParameter
     {
-        [Key]
-        public decimal FilterParametersId { get; set; }
-        public decimal FilterParametersFilterId { get; set; }
-        public decimal FilterParametersParameterId { get; set; }
+        public int Id { get; set; }
+        public int FilterParametersFilterId { get; set; }
+        public int FilterParametersParameterId { get; set; }
     }
 }

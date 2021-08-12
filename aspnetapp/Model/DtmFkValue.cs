@@ -7,12 +7,11 @@ namespace aspnetapp.Model
 {
     public class DtmFkValue
     {
-        [Key]
-        public decimal FkValueId { get; set; }
-        public decimal FkValueFkfieldId { get; set; }
-        public decimal FkValueFieldId { get; set; }
+        public int Id { get; set; }
+        public int FkValueFkfieldId { get; set; }
+        public int FkValueFieldId { get; set; }
         public string FkvalueSeparator { get; set; }
-        public decimal? FkvalueOrder { get; set; }
+        public int? FkvalueOrder { get; set; }
         public bool? FkvalueDoNotDisplay { get; set; }
     }
 }

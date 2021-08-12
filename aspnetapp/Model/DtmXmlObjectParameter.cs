@@ -7,9 +7,8 @@ namespace aspnetapp.Model
 {
     public class DtmXmlObjectParameter
     {
-        [Key]
-        public decimal XmlObjectParametersId { get; set; }
-        public decimal XmlObjectParametersXmlObjectId { get; set; }
-        public decimal XmlObjectParametersParameterId { get; set; }
+        public int Id { get; set; }
+        public int XmlObjectParametersXmlObjectId { get; set; }
+        public int XmlObjectParametersParameterId { get; set; }
     }
 }

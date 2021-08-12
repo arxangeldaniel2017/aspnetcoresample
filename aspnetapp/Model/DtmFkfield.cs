@@ -7,9 +7,8 @@ namespace aspnetapp.Model
 {
     public class DtmFkfield
     {
-        [Key]
-        public decimal FkfieldId { get; set; }
-        public decimal FkfieldTableId { get; set; }
-        public decimal FkfieldKeyFieldId { get; set; }
+        public int Id { get; set; }
+        public int FkfieldTableId { get; set; }
+        public int FkfieldKeyFieldId { get; set; }
     }
 }

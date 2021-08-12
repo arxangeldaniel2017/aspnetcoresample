@@ -7,11 +7,10 @@ namespace aspnetapp.Model
 {
     public class DtmDatabase
     {
-        [Key]
-        public decimal DatabaseId { get; set; }
+        public int Id { get; set; }
         public string DatabaseName { get; set; }
         public string DatabaseApplicationString { get; set; }
         public string DatabaseConnString { get; set; }
-        public decimal? DatabaseTypeId { get; set; }
+        public int? DatabaseTypeId { get; set; }
     }
 }

@@ -7,11 +7,10 @@ namespace aspnetapp.Model
 {
     public class DtmTablePermission
     {
-        [Key]
-        public decimal TablePermissionId { get; set; }
-        public decimal TablePermissionTableId { get; set; }
-        public decimal TablePermissionActionId { get; set; }
-        public decimal? TablePermissionUserGroupId { get; set; }
-        public decimal? TablePermissionUserId { get; set; }
+        public int Id { get; set; }
+        public int TablePermissionTableId { get; set; }
+        public int TablePermissionActionId { get; set; }
+        public int? TablePermissionUserGroupId { get; set; }
+        public int? TablePermissionUserId { get; set; }
     }
 }

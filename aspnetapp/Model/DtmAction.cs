@@ -8,8 +8,7 @@ namespace aspnetapp.Model
 {
     public class DtmAction
     {
-        [Key]
-        public int ActionId { get; set; }
+        public int Id { get; set; }
         public string ActionName { get; set; }
     }
 }

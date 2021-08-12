@@ -7,9 +7,8 @@ namespace aspnetapp.Model
 {
     public class DtmApplication
     {
-        [Key]
-        public decimal ApplicationId { get; set; }
-        public decimal ApplicationSiteId { get; set; }
+        public int Id { get; set; }
+        public int ApplicationSiteId { get; set; }
         public string ApplicationName { get; set; }
         public string ApplicationCaption { get; set; }
     }

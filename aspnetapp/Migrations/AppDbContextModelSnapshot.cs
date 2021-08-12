@@ -21,7 +21,7 @@ namespace aspnetapp.Migrations
 
             modelBuilder.Entity("aspnetapp.Model.DtmAction", b =>
                 {
-                    b.Property<int>("ActionId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
@@ -29,7 +29,7 @@ namespace aspnetapp.Migrations
                     b.Property<string>("ActionName")
                         .HasColumnType("text");
 
-                    b.HasKey("ActionId");
+                    b.HasKey("Id");
 
                     b.ToTable("DtmActions");
                 });

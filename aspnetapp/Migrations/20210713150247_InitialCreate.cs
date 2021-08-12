@@ -12,27 +12,27 @@ namespace aspnetapp.Migrations
                 name: "DtmActions",
                 columns: table => new
                 {
-                    ActionId = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     ActionName = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_DtmActions", x => x.ActionId);
+                    table.PrimaryKey("PK_DtmActions", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "DtmApplications",
                 columns: table => new
                 {
-                    ApplicationId = table.Column<decimal>(type: "numeric", nullable: false),
+                    Id = table.Column<decimal>(type: "numeric", nullable: false),
                     ApplicationSiteId = table.Column<decimal>(type: "numeric", nullable: false),
                     ApplicationName = table.Column<string>(type: "text", nullable: true),
                     ApplicationCaption = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_DtmApplications", x => x.ApplicationId);
+                    table.PrimaryKey("PK_DtmApplications", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(

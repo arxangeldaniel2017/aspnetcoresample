@@ -7,8 +7,7 @@ namespace aspnetapp.Model
 {
     public class DtmUploadType
     {
-        [Key]
-        public decimal UploadTypeId { get; set; }
+        public int Id { get; set; }
         public string UploadTypeName { get; set; }
     }
 }

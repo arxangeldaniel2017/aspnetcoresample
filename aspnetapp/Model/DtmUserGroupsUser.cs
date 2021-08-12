@@ -7,9 +7,8 @@ namespace aspnetapp.Model
 {
     public class DtmUserGroupsUser
     {
-        [Key]
-        public decimal UserGroupsUsersId { get; set; }
-        public decimal UserGroupsUsersUserGroupId { get; set; }
-        public decimal UserGroupsUsersUserId { get; set; }
+        public int Id { get; set; }
+        public int UserGroupsUsersUserGroupId { get; set; }
+        public int UserGroupsUsersUserId { get; set; }
     }
 }

@@ -7,12 +7,11 @@ namespace aspnetapp.Model
 {
     public class DtmFilterGroup
     {
-        [Key]
-        public decimal FilterGroupId { get; set; }
+        public int Id { get; set; }
         public string FilterGroupName { get; set; }
-        public decimal FilterGroupOperatorId { get; set; }
-        public decimal FilterGroupFilterId { get; set; }
-        public decimal FilterGroupFilterOperatorId { get; set; }
+        public int FilterGroupOperatorId { get; set; }
+        public int FilterGroupFilterId { get; set; }
+        public int FilterGroupFilterOperatorId { get; set; }
         public int FilterGroupOrderBy { get; set; }
     }
 }

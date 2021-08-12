@@ -7,8 +7,7 @@ namespace aspnetapp.Model
 {
     public class DtmParameterType
     {
-        [Key]
-        public decimal ParameterTypeId { get; set; }
+        public int Id { get; set; }
         public string ParameterTypeName { get; set; }
     }
 }

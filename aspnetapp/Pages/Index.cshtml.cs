@@ -28,7 +28,7 @@ namespace aspnetapp.Pages
             _context.SaveChanges();
           
             var action = _context.DtmActions.FirstOrDefault();
-            var id = action?.ActionId;
+            var id = action?.Id;
 
             // //TODO: test working
             // _context.Tests.Add(new Test(){Id = 4, Name = "Tolik"});

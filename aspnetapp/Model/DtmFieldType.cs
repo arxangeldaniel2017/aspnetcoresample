@@ -7,8 +7,7 @@ namespace aspnetapp.Model
 {
     public class DtmFieldType
     {
-        [Key]
-        public decimal FieldTypeId { get; set; }
+        public int Id { get; set; }
         public string FieldTypeName { get; set; }
     }
 }
