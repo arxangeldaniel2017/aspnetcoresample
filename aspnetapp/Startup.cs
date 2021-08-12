@@ -66,7 +66,7 @@ namespace aspnetapp
                 endpoints.MapRazorPages();
             });
 
-            ApplyMigrations(context);
+            //ApplyMigrations(context);
         }
 
         private void ApplyMigrations(AppDbContext context) 
