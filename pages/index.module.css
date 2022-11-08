@@ -1,0 +1,1313 @@
+.dressesDiv {
+  position: absolute;
+  top: 213.67px;
+  left: 108.19px;
+  font-size: 34.65px;
+  font-weight: 500;
+  color: var(--color-black);
+  display: inline-block;
+}
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 var(--br-lg) 0 0;
+  border: 1.5px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 90.6px;
+  height: 37.75px;
+}
+.sheinDiv1 {
+  position: absolute;
+  top: 4.53px;
+  left: 14.34px;
+  display: inline-block;
+}
+.sheinDiv {
+  position: relative;
+  width: 90.6px;
+  height: 37.75px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+.rectangleButton {
+  cursor: pointer;
+  border: 1.5px solid var(--color-gray-200);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 var(--br-lg) 0 0;
+  box-sizing: border-box;
+  width: 90.6px;
+  height: 37.75px;
+}
+.miniDiv {
+  position: absolute;
+  top: 4.53px;
+  left: 22.04px;
+  font-size: var(--font-size-6xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.miniButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 90.6px;
+  height: 37.75px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+.lightGoldDiv {
+  position: relative;
+  display: inline-block;
+}
+.frameDiv1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 var(--br-lg) 0 0;
+  border: 1.5px solid var(--color-gray-200);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-sm) var(--padding-md);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.beigeDiv,
+.lightDiv,
+.pinkDiv,
+.pltDiv,
+.redDiv {
+  position: relative;
+  width: 139.58px;
+  height: 37.53px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+.beigeDiv,
+.pinkDiv,
+.pltDiv,
+.redDiv {
+  width: 213.58px;
+}
+.beigeDiv,
+.pinkDiv,
+.redDiv {
+  width: 91.58px;
+}
+.pinkDiv,
+.redDiv {
+  width: 138.58px;
+}
+.redDiv {
+  width: 72.58px;
+}
+.darkDiv1 {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.frameButton {
+  cursor: pointer;
+  border: 1.5px solid var(--color-gray-200);
+  padding: var(--padding-sm) var(--padding-md);
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 var(--br-lg) 0 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.darkDiv {
+  position: relative;
+  width: 80.58px;
+  height: 37.53px;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+.frameDiv {
+  position: absolute;
+  top: 5.23px;
+  left: 0;
+  width: 1211.5px;
+  height: 38.4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25.4px;
+}
+.rectangleDiv2 {
+  position: absolute;
+  top: 0;
+  left: 1308.51px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff 54.69%);
+  width: 73.15px;
+  height: 49.09px;
+}
+.tagsDiv,
+.vectorIcon {
+  position: absolute;
+  top: 11px;
+  left: 1377.93px;
+  width: 14.17px;
+  height: 26.13px;
+}
+.tagsDiv {
+  top: 264.69px;
+  left: 109.15px;
+  width: 1391px;
+  height: 49.09px;
+  font-size: var(--font-size-6xl);
+  color: var(--color-black);
+}
+.lengthDiv1,
+.productsDiv {
+  position: absolute;
+  display: inline-block;
+}
+.productsDiv {
+  top: 220.41px;
+  left: 1296.43px;
+  font-size: var(--font-size-6xl);
+  color: #868687;
+}
+.lengthDiv1 {
+  top: 0;
+  left: 1.84px;
+  font-weight: 500;
+  color: var(--color-black);
+}
+.rectangleDiv3,
+.vectorIcon1,
+.vectorIcon2 {
+  position: absolute;
+  top: 8.47px;
+  left: 329.52px;
+  border-radius: var(--br-sm);
+  width: 24.17px;
+  height: 13.23px;
+}
+.rectangleDiv3,
+.vectorIcon2 {
+  top: 236.52px;
+  left: 0;
+  width: 318.13px;
+  height: 0.92px;
+}
+.rectangleDiv3 {
+  top: 0.92px;
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 24.9px;
+  height: 24.9px;
+}
+.span {
+  color: var(--color-black);
+}
+.span1 {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-300);
+}
+.mini227Div {
+  position: absolute;
+  top: 0;
+  left: 48.65px;
+  font-weight: 500;
+  display: inline-block;
+}
+.mini1Div,
+.rectangleInput {
+  position: absolute;
+  top: 57.17px;
+  left: 0;
+  width: 138.65px;
+  height: 27px;
+}
+.rectangleInput {
+  cursor: pointer;
+  top: 0.92px;
+  border-radius: var(--br-sm);
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 24.9px;
+  height: 24.9px;
+}
+.maxDiv,
+.mini2Div {
+  position: absolute;
+  top: 107.89px;
+  left: 0;
+  width: 139.65px;
+  height: 27px;
+}
+.maxDiv {
+  top: 158.6px;
+}
+.lengthDiv,
+.sizeDiv1 {
+  position: absolute;
+  font-size: var(--font-size-4xl);
+}
+.lengthDiv {
+  top: 384px;
+  left: 106.22px;
+  width: 353.13px;
+  height: 236.98px;
+}
+.sizeDiv1 {
+  top: 0;
+  left: 1.84px;
+  font-weight: 500;
+  display: inline-block;
+}
+.vectorIcon3,
+.vectorIcon4 {
+  position: absolute;
+  top: 7.17px;
+  left: 329.52px;
+  width: 24.17px;
+  height: 14.53px;
+}
+.vectorIcon4 {
+  top: 236.52px;
+  left: 0;
+  width: 318.13px;
+  height: 0.92px;
+}
+.xXXSDiv {
+  position: absolute;
+  top: 1.87px;
+  left: 7.5px;
+  display: inline-block;
+}
+.frameDiv6 {
+  position: absolute;
+  top: 49px;
+  left: 0;
+  border-radius: var(--br-md);
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 68.48px;
+  height: 28.65px;
+}
+.hDiv {
+  position: absolute;
+  top: 1.87px;
+  left: 26.74px;
+  display: inline-block;
+}
+.frameDiv7 {
+  position: absolute;
+  top: 106.04px;
+  left: 0;
+  border-radius: var(--br-md);
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 68.48px;
+  height: 28.65px;
+}
+.frameDiv8,
+.xXXLProgressBar {
+  position: absolute;
+  top: 1.87px;
+  left: 8.3px;
+}
+.frameDiv8 {
+  top: 163.21px;
+  left: 0;
+  border-radius: var(--br-md);
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 68.48px;
+  height: 28.65px;
+}
+.xXSDiv {
+  position: absolute;
+  top: 1.87px;
+  left: 13.75px;
+  display: inline-block;
+}
+.frameDiv9,
+.frameTextarea {
+  position: absolute;
+  top: 49px;
+  left: 92.24px;
+  border-radius: var(--br-md);
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 68.27px;
+  height: 28.66px;
+}
+.frameTextarea {
+  background-color: transparent;
+  top: 106.04px;
+}
+.xXXXLDiv {
+  position: absolute;
+  top: 3.69px;
+  left: 5.29px;
+  display: inline-block;
+}
+.frameDiv10 {
+  position: absolute;
+  top: 163.21px;
+  left: 92.24px;
+  border-radius: var(--br-md);
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 68.27px;
+  height: 28.66px;
+  font-size: 18.44px;
+}
+.xSDiv {
+  position: absolute;
+  top: 1.87px;
+  left: 20.62px;
+  font-size: var(--font-size-3xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.frameButton1,
+.frameTextarea1 {
+  border: 0.9px solid var(--color-gray-200);
+  background-color: transparent;
+  position: absolute;
+  left: 183.26px;
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 68.27px;
+  height: 28.66px;
+}
+.frameButton1 {
+  cursor: pointer;
+  padding: 0;
+  top: 49px;
+}
+.frameTextarea1 {
+  top: 106.04px;
+}
+.sDiv {
+  position: absolute;
+  top: 1.87px;
+  left: 27.49px;
+  display: inline-block;
+}
+.frameDiv11 {
+  position: absolute;
+  top: 49px;
+  left: 284.28px;
+  border-radius: var(--br-md);
+  border: 0.9px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 68.27px;
+  height: 28.66px;
+}
+.xXLDiv {
+  position: absolute;
+  top: 1.87px;
+  left: 14.45px;
+  font-size: var(--font-size-3xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.frameButton2 {
+  cursor: pointer;
+  border: 0.9px solid var(--color-gray-200);
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 106.04px;
+  left: 284.28px;
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 68.27px;
+  height: 28.66px;
+}
+.priceDiv,
+.sizeDiv {
+  position: absolute;
+  color: var(--color-black);
+}
+.sizeDiv {
+  top: 1242.49px;
+  left: 106.22px;
+  width: 353.13px;
+  height: 236.98px;
+  font-size: var(--font-size-3xl);
+}
+.priceDiv {
+  top: 0;
+  left: 2.77px;
+  font-size: var(--font-size-4xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  text-align: left;
+  display: inline-block;
+}
+.vectorIcon5 {
+  position: absolute;
+  top: 7.17px;
+  left: 330.44px;
+  width: 24.17px;
+  height: 14.53px;
+}
+.div,
+.div1 {
+  position: absolute;
+  top: 72.72px;
+  left: 0.92px;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.div1 {
+  left: 304.26px;
+}
+.meterIcon,
+.vectorIcon6 {
+  position: absolute;
+  top: 112.5px;
+  left: 0;
+  width: 319.05px;
+  height: 20.29px;
+}
+.vectorIcon6 {
+  top: 171.05px;
+  left: 169.15px;
+  width: 14.75px;
+  height: 0.92px;
+}
+.groupSelect,
+.rectangleButton1 {
+  position: absolute;
+  top: 155.84px;
+  left: 0.92px;
+  width: 145.19px;
+  height: 33.2px;
+}
+.rectangleButton1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #e2e2e2;
+  top: 0;
+  left: 0;
+  width: 134.63px;
+}
+.div2,
+.div3 {
+  position: absolute;
+  font-family: var(--font-inter);
+  text-align: left;
+  display: inline-block;
+}
+.div2 {
+  top: 5.53px;
+  left: 125.19px;
+  font-size: 17.7px;
+  color: #878787;
+}
+.div3 {
+  top: 7.26px;
+  left: 11.99px;
+  font-size: 14.81px;
+  color: var(--color-gray-200);
+}
+.groupButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 155.84px;
+  left: 210.42px;
+  width: 137.19px;
+  height: 33.2px;
+}
+.rectangleDiv5 {
+  position: absolute;
+  top: 225.92px;
+  left: 0.92px;
+  border-radius: 2.36px;
+  border: 0.8px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 21.21px;
+  height: 21.21px;
+}
+.justShowMeSales {
+  position: absolute;
+  top: 225.92px;
+  left: 29.51px;
+  font-size: 18.54px;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.priceForm {
+  position: absolute;
+  top: 1506.21px;
+  left: 105.3px;
+  width: 354.26px;
+  height: 247.92px;
+}
+.brand1Div,
+.searchIcon {
+  position: absolute;
+  left: 0;
+}
+.searchIcon {
+  top: 50.72px;
+  width: 342.92px;
+  height: 36.88px;
+}
+.brand1Div {
+  top: 0;
+  font-weight: 500;
+  display: inline-block;
+}
+.vectorIcon7 {
+  position: absolute;
+  top: 8.47px;
+  left: 327.67px;
+  border-radius: var(--br-sm);
+  width: 24.17px;
+  height: 13.23px;
+}
+.groupDiv {
+  position: absolute;
+  top: 0;
+  left: 1.84px;
+  width: 351.29px;
+  height: 27px;
+  color: var(--color-black);
+}
+.vectorIcon8 {
+  position: absolute;
+  top: 567.56px;
+  left: 0;
+  border-radius: var(--br-sm);
+  width: 318.13px;
+  height: 0.92px;
+}
+.gucciDiv,
+.mini3Div,
+.mini5Div {
+  position: absolute;
+  left: 0;
+  height: 27px;
+}
+.gucciDiv {
+  top: 111.58px;
+  width: 109.65px;
+  color: var(--color-black);
+}
+.mini3Div,
+.mini5Div {
+  top: 263.72px;
+  width: 138.65px;
+}
+.mini5Div {
+  top: 415.87px;
+}
+.groupDiv1,
+.luiDiv,
+.rectangleButton2 {
+  position: absolute;
+  left: 0;
+  width: 24.9px;
+  height: 24.9px;
+}
+.rectangleButton2 {
+  cursor: pointer;
+  border: 0.9px solid var(--color-gray-200);
+  padding: 0;
+  background-color: transparent;
+  top: 0;
+  border-radius: var(--br-sm);
+  box-sizing: border-box;
+}
+.groupDiv1,
+.luiDiv {
+  top: 0.92px;
+}
+.luiDiv {
+  top: 162.29px;
+  width: 144.65px;
+  height: 27px;
+}
+.brandsDiv,
+.maxDiv1,
+.maxDiv2,
+.maxDiv3,
+.mini4Div,
+.mini6Div {
+  position: absolute;
+  top: 314.44px;
+  left: 0;
+  width: 139.65px;
+  height: 27px;
+}
+.brandsDiv,
+.maxDiv1,
+.maxDiv2,
+.maxDiv3,
+.mini6Div {
+  top: 466.59px;
+}
+.brandsDiv,
+.maxDiv1,
+.maxDiv2,
+.maxDiv3 {
+  top: 213.01px;
+}
+.brandsDiv,
+.maxDiv2,
+.maxDiv3 {
+  top: 365.16px;
+}
+.brandsDiv,
+.maxDiv3 {
+  top: 517.31px;
+}
+.brandsDiv {
+  top: 647.72px;
+  left: 106.22px;
+  width: 353.13px;
+  height: 568.02px;
+  font-size: var(--font-size-4xl);
+}
+.rectangleDiv11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  box-shadow: 0 6px 20px 1px rgba(0, 0, 0, 0.15);
+  width: 291px;
+  height: 441.24px;
+}
+.maskGroupIcon {
+  position: absolute;
+  top: 5.62px;
+  left: -16.6px;
+  width: 324.2px;
+  height: 363.34px;
+  object-fit: cover;
+}
+.classyAssymetricDress,
+.redCruiDiv {
+  position: absolute;
+  top: 352.24px;
+  left: 15.92px;
+  display: inline-block;
+  width: 96px;
+  height: 30.69px;
+}
+.classyAssymetricDress {
+  top: 388.34px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  width: 172px;
+  height: 19.05px;
+}
+.span20 {
+  font-size: var(--font-size-2xl);
+}
+.div4 {
+  position: absolute;
+  top: 406.88px;
+  left: 219.89px;
+  display: inline-block;
+  width: 86px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon9 {
+  position: absolute;
+  height: 7.55%;
+  width: 9.17%;
+  top: 32.39%;
+  right: 0;
+  bottom: 60.06%;
+  left: 90.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress1Div,
+.maskGroupIcon1 {
+  position: absolute;
+  top: 362px;
+  left: 503px;
+  width: 315.83px;
+  height: 441.24px;
+}
+.maskGroupIcon1 {
+  top: 21.49px;
+  left: -2px;
+  width: 293px;
+  height: 330.87px;
+  object-fit: cover;
+}
+.whiteBloomGown {
+  top: 352.24px;
+  left: 15.92px;
+  width: 212px;
+  height: 30.69px;
+}
+.classyDressDiv,
+.div5,
+.whiteBloomGown {
+  position: absolute;
+  display: inline-block;
+}
+.classyDressDiv {
+  top: 388.34px;
+  left: 15.92px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  width: 91px;
+  height: 19.05px;
+}
+.div5 {
+  top: 406.88px;
+  left: 229.89px;
+  width: 74px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon10 {
+  position: absolute;
+  height: 7.55%;
+  width: 9.17%;
+  top: 67.19%;
+  right: 0;
+  bottom: 25.26%;
+  left: 90.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress4Div,
+.maskGroupIcon2 {
+  position: absolute;
+  top: 851.92px;
+  left: 503px;
+  width: 315.83px;
+  height: 441.24px;
+}
+.maskGroupIcon2 {
+  top: 5.62px;
+  left: -7px;
+  width: 298px;
+  height: 361.51px;
+  object-fit: cover;
+}
+.simpleOveralDiv {
+  top: 352.24px;
+  left: 15.93px;
+  width: 154px;
+  height: 30.69px;
+}
+.assymetricDressDiv,
+.div6,
+.simpleOveralDiv {
+  position: absolute;
+  display: inline-block;
+}
+.assymetricDressDiv {
+  top: 388.34px;
+  left: 15.93px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  width: 122px;
+  height: 19.05px;
+}
+.div6 {
+  top: 406.88px;
+  left: 229.89px;
+  width: 76px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon11 {
+  position: absolute;
+  height: 7.55%;
+  width: 9.12%;
+  top: 32.39%;
+  right: 0;
+  bottom: 60.06%;
+  left: 90.88%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress2Div,
+.maskGroupIcon3 {
+  position: absolute;
+  top: 362px;
+  left: 841px;
+  width: 317.86px;
+  height: 441.24px;
+}
+.maskGroupIcon3 {
+  top: 5.62px;
+  left: 0;
+  width: 291px;
+  height: 360.44px;
+  object-fit: cover;
+}
+.vectorIcon12 {
+  position: absolute;
+  height: 6.89%;
+  width: 9.17%;
+  top: 93.11%;
+  right: 0;
+  bottom: 0;
+  left: 90.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress7Div,
+.maskGroupIcon4 {
+  position: absolute;
+  top: 1341.84px;
+  left: 503px;
+  width: 315.83px;
+  height: 483.3px;
+}
+.maskGroupIcon4 {
+  top: 5.62px;
+  left: 0;
+  width: 291px;
+  height: 346.74px;
+  object-fit: cover;
+}
+.whiteCDiv {
+  position: absolute;
+  top: 352.24px;
+  left: 15.92px;
+  display: inline-block;
+  width: 88px;
+  height: 30.69px;
+}
+.vectorIcon13 {
+  position: absolute;
+  height: 5.23%;
+  width: 9.17%;
+  top: 94.77%;
+  right: 0;
+  bottom: 0;
+  left: 90.83%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress10Div,
+.maskGroupIcon5 {
+  position: absolute;
+  top: 1831.76px;
+  left: 503px;
+  width: 315.83px;
+  height: 636.84px;
+}
+.maskGroupIcon5 {
+  top: 31.02px;
+  left: -6.54px;
+  width: 310.38px;
+  height: 321.34px;
+  object-fit: cover;
+}
+.greyMontanaDiv {
+  top: 352.24px;
+  left: 15.93px;
+  width: 157px;
+  height: 30.69px;
+}
+.div9,
+.easyFlyDressDiv,
+.greyMontanaDiv {
+  position: absolute;
+  display: inline-block;
+}
+.easyFlyDressDiv {
+  top: 388.34px;
+  left: 15.93px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  width: 98px;
+  height: 19.05px;
+}
+.div9 {
+  top: 406.88px;
+  left: 229.89px;
+  width: 77px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon14 {
+  position: absolute;
+  height: 7.55%;
+  width: 9.12%;
+  top: 67.19%;
+  right: 0;
+  bottom: 25.26%;
+  left: 90.88%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress5Div,
+.maskGroupIcon6 {
+  position: absolute;
+  top: 851.92px;
+  left: 841px;
+  width: 317.86px;
+  height: 441.24px;
+}
+.maskGroupIcon6 {
+  top: -16.6px;
+  left: 0.25px;
+  width: 297.05px;
+  height: 385.43px;
+  object-fit: cover;
+}
+.goldCrestDiv {
+  top: 352.24px;
+  left: 15.93px;
+  width: 119px;
+  height: 30.69px;
+}
+.classyAssymetricDress2,
+.div10,
+.goldCrestDiv {
+  position: absolute;
+  display: inline-block;
+}
+.classyAssymetricDress2 {
+  top: 388.34px;
+  left: 15.93px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  width: 172px;
+  height: 19.05px;
+}
+.div10 {
+  top: 406.88px;
+  left: 220.89px;
+  width: 86px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon15 {
+  position: absolute;
+  height: 7.55%;
+  width: 9.06%;
+  top: 32.39%;
+  right: 0;
+  bottom: 60.06%;
+  left: 90.94%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress3Div,
+.maskGroupIcon7 {
+  position: absolute;
+  top: 362px;
+  left: 1179px;
+  width: 319.9px;
+  height: 441.24px;
+}
+.maskGroupIcon7 {
+  top: 23.61px;
+  left: -16.6px;
+  width: 324.2px;
+  height: 328.75px;
+  object-fit: cover;
+}
+.gentleJpDiv {
+  top: 352.24px;
+  left: 15.93px;
+  width: 100px;
+  height: 30.69px;
+}
+.div11,
+.gentleJpDiv,
+.homeRelaxingDress {
+  position: absolute;
+  display: inline-block;
+}
+.homeRelaxingDress {
+  top: 388.34px;
+  left: 15.93px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  width: 148px;
+  height: 19.05px;
+}
+.div11 {
+  top: 406.88px;
+  left: 223.89px;
+  width: 77px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon16 {
+  position: absolute;
+  height: 6.89%;
+  width: 9.12%;
+  top: 93.11%;
+  right: 0;
+  bottom: 0;
+  left: 90.88%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress8Div,
+.maskGroupIcon8 {
+  position: absolute;
+  top: 1341.84px;
+  left: 841px;
+  width: 317.86px;
+  height: 483.3px;
+}
+.maskGroupIcon8 {
+  top: 23.61px;
+  left: -16.6px;
+  width: 324.2px;
+  height: 345.35px;
+  object-fit: cover;
+}
+.div12,
+.emilyTamperGown {
+  position: absolute;
+  top: 352.24px;
+  left: 15.93px;
+  display: inline-block;
+  width: 221px;
+  height: 30.69px;
+}
+.div12 {
+  top: 406.88px;
+  left: 219.89px;
+  width: 85px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon17 {
+  position: absolute;
+  height: 5.23%;
+  width: 9.12%;
+  top: 94.77%;
+  right: 0;
+  bottom: 0;
+  left: 90.88%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress11Div,
+.maskGroupIcon9 {
+  position: absolute;
+  top: 1831.76px;
+  left: 841px;
+  width: 317.86px;
+  height: 636.84px;
+}
+.maskGroupIcon9 {
+  top: -16.6px;
+  left: 0.25px;
+  width: 297.46px;
+  height: 368.84px;
+  object-fit: cover;
+}
+.hotGirlSummer {
+  top: 352.24px;
+  left: 15.93px;
+  width: 178px;
+  height: 30.69px;
+}
+.div13,
+.hotGirlSummer,
+.miamiDressDiv {
+  position: absolute;
+  display: inline-block;
+}
+.miamiDressDiv {
+  top: 388.34px;
+  left: 15.93px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  width: 86px;
+  height: 19.05px;
+}
+.div13 {
+  top: 406.88px;
+  left: 220.89px;
+  width: 77px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon18 {
+  position: absolute;
+  height: 7.55%;
+  width: 9.06%;
+  top: 67.56%;
+  right: 0;
+  bottom: 24.89%;
+  left: 90.94%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress6Div,
+.maskGroupIcon10 {
+  position: absolute;
+  top: 857.21px;
+  left: 1179px;
+  width: 319.9px;
+  height: 441.24px;
+}
+.maskGroupIcon10 {
+  top: -9.19px;
+  left: 0;
+  width: 291px;
+  height: 376.29px;
+  object-fit: cover;
+}
+.fasseyCDiv {
+  top: 352.24px;
+  left: 15.93px;
+  width: 103px;
+  height: 30.69px;
+}
+.classyDressDiv1,
+.div14,
+.fasseyCDiv {
+  position: absolute;
+  display: inline-block;
+}
+.classyDressDiv1 {
+  top: 388.34px;
+  left: 15.93px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  width: 91px;
+  height: 19.05px;
+}
+.div14 {
+  top: 406.88px;
+  left: 230.89px;
+  width: 76px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon19 {
+  position: absolute;
+  height: 6.89%;
+  width: 9.06%;
+  top: 93.11%;
+  right: 0;
+  bottom: 0;
+  left: 90.94%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress9Div,
+.maskGroupIcon11 {
+  position: absolute;
+  top: 1341.84px;
+  left: 1179px;
+  width: 319.9px;
+  height: 483.3px;
+}
+.maskGroupIcon11 {
+  top: -16.6px;
+  left: 0.25px;
+  width: 307.06px;
+  height: 369.17px;
+  object-fit: cover;
+}
+.lasVegasFancy {
+  top: 352.24px;
+  left: 15.93px;
+  width: 188px;
+  height: 30.69px;
+}
+.div15,
+.lasVegasChillDress,
+.lasVegasFancy {
+  position: absolute;
+  display: inline-block;
+}
+.lasVegasChillDress {
+  top: 388.34px;
+  left: 15.93px;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  width: 150px;
+  height: 19.05px;
+}
+.div15 {
+  top: 406.88px;
+  left: 220.89px;
+  width: 85px;
+  height: 26.45px;
+  font-size: var(--font-size-xl);
+}
+.vectorIcon20 {
+  position: absolute;
+  height: 5.23%;
+  width: 9.06%;
+  top: 94.77%;
+  right: 0;
+  bottom: 0;
+  left: 90.94%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.dress12Div {
+  position: absolute;
+  top: 1831.76px;
+  left: 1179px;
+  width: 319.9px;
+  height: 636.84px;
+}
+.landingPageDiv {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 3160px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-inter);
+}
