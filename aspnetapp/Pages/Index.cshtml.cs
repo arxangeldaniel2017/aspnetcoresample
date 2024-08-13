@@ -25,10 +25,10 @@ namespace aspnetapp.Pages
 
             //TODO: test Model_DTM
             _context.DtmActions.Add(new DtmAction(){ActionName = "Add"});
-            _context.SaveChanges();
+            //_context.SaveChanges();
           
-            var action = _context.DtmActions.FirstOrDefault();
-            var id = action?.Id;
+            //var action = _context.DtmActions.FirstOrDefault();
+            //var id = action?.Id;
 
             // //TODO: test working
             // _context.Tests.Add(new Test(){Id = 4, Name = "Tolik"});
